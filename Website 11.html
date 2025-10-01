@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FUN LEARNING - Bimbel Online</title>
+  <style>
+    :root{
+      --blue:#0b66d6;
+      --light:#f4f8ff;
+      --dark:#033463;
+      --white:#ffffff;
+      --card-shadow: 0 6px 18px rgba(3,52,99,0.12);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    body{margin:0;background:var(--light);color:var(--dark);}
+    header{background:linear-gradient(90deg,var(--blue),#3a8fe6);color:var(--white);padding:28px 20px}
+    .container{max-width:1100px;margin:0 auto}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:var(--white);display:flex;align-items:center;justify-content:center;color:var(--blue);font-weight:700}
+    nav a{color:rgba(255,255,255,0.95);text-decoration:none;margin-left:18px;font-weight:600}
+    .hero{display:flex;gap:24px;align-items:center;padding:36px 0}
+    .hero-left{flex:1}
+    .hero h1{margin:0;font-size:32px}
+    .hero p{line-height:1.6;color:rgba(255,255,255,0.95);margin-top:12px}
+    .cta{margin-top:18px}
+    .btn{background:var(--white);color:var(--blue);padding:10px 18px;border-radius:10px;font-weight:700;border:none;cursor:pointer;box-shadow:var(--card-shadow)}
+    .hero-right{flex:1;display:flex;justify-content:center}
+    .card{background:var(--white);border-radius:12px;padding:18px;box-shadow:var(--card-shadow)}
+
+    main{padding:36px 20px}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:24px;max-width:1100px;margin:0 auto}
+    .section{background:var(--white);padding:20px;border-radius:12px;box-shadow:var(--card-shadow)}
+
+    .tutors{display:flex;flex-direction:column;gap:12px}
+    .tutor{display:flex;gap:12px;align-items:center}
+    .tutor img{width:84px;height:84px;border-radius:10px;object-fit:cover}
+
+    .founders{display:flex;gap:12px}
+    .founder{flex:1;text-align:center;padding:12px}
+    .founder img{width:120px;height:120px;border-radius:999px;object-fit:cover}
+
+    footer{padding:20px;text-align:center;color:#334a63}
+    @media(max-width:880px){
+      .grid{grid-template-columns:1fr}
+      .hero{flex-direction:column}
+      .hero-right{order:-1}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">FL</div>
+        <div>
+          <div style="font-weight:800">FUN LEARNING</div>
+          <div style="font-size:12px;opacity:0.9">Bimbingan Belajar Online & Offline</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">Tentang</a>
+        <a href="#tutors">Tutor</a>
+        <a href="#founders">Founder</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+
+    <div class="container hero">
+      <div class="hero-left">
+        <h1>Belajar lebih mudah, lebih menyenangkan — bersama FUN LEARNING</h1>
+        <p>
+          FUN LEARNING adalah bimbingan belajar yang dirancang untuk membantu siswa SD, SMP, dan SMA mencapai potensi terbaiknya.
+          Kami menghadirkan metode pengajaran yang interaktif, modul yang terstruktur, dan tentor mahasiswa berpengalaman dari berbagai jurusan.
+          Tujuan kami sederhana: membuat proses belajar menjadi menyenangkan, efektif, dan relevan dengan kebutuhan ujian dan perkembangan kemampuan akademik.
+        </p>
+        <div class="cta">
+          <button class="btn">Daftar Sekarang</button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="card" style="max-width:360px">
+          <h3 style="margin-top:0">Kenapa pilih FUN LEARNING?</h3>
+          <ul>
+            <li>Materi tersusun rapi sesuai kurikulum</li>
+            <li>Tentor mahasiswa aktif dan ramah</li>
+            <li>Kelas online & tatap muka (terbatas)</li>
+            <li>Latihan soal, tryout, dan evaluasi berkala</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid">
+      <div>
+        <section id="about" class="section">
+          <h2>Tentang FUN LEARNING</h2>
+          <p style="text-align:justify;line-height:1.8">
+            FUN LEARNING lahir dari gagasan sederhana: belajar tidak harus membosankan. Kami percaya bahwa setiap siswa memiliki gaya belajar yang unik.
+            Dengan pendekatan personal dan kombinasi metode visual, diskusi, serta latihan terarah, FUN LEARNING membantu siswa membangun fondasi kuat dalam pelajaran inti seperti Matematika, IPA, Bahasa Indonesia, Bahasa Inggris, dan pelajaran lain yang diperlukan untuk jenjang SD, SMP, dan SMA.
+            <br><br>
+            Program kami disusun menjadi beberapa jalur: kursus reguler mingguan, kelas intensif menjelang ujian, sesi remedial, dan program pengayaan untuk siswa yang ingin mendalami topik tertentu.
+            Tentor kami adalah mahasiswa aktif dari berbagai universitas — mereka tidak hanya paham materi, tetapi juga dekat usia sehingga mampu menjalin komunikasi yang hangat dan efektif dengan siswa.
+            <br><br>
+            Selain pengajaran, kami juga memberi perhatian pada pengembangan soft-skill: teknik belajar efektif, manajemen waktu, serta strategi menghadapi ujian.
+            Dengan evaluasi berkala dan laporan perkembangan, orang tua mendapat gambaran jelas kemajuan anak.
+            FUN LEARNING tersedia dalam format online (video interaktif dan live class) serta offline di beberapa kota sesuai jadwal.
+          </p>
+        </section>
+
+        <section id="tutors" class="section" style="margin-top:18px">
+          <h2>Tentor Kami</h2>
+          <p>Kami merekrut tentor dari kalangan mahasiswa berprestasi — yang lulus seleksi materi dan kemampuan mengajar. Berikut contoh tentor & suasana belajar:</p>
+
+          <div class="tutors">
+            <div class="tutor">
+              <img src="https://cdn.depositphotos.com/388200632/stock-photo-beautiful-indonesian-junior-high-school-student.jpg" alt="siswa indonesia">
+              <div>
+                <strong>Rizky — Tutor Matematika (SMP)</strong>
+                <div style="font-size:13px;opacity:0.8">Mahasiswa Statistika, berpengalaman mengajar 2 tahun</div>
+              </div>
+            </div>
+
+            <div class="tutor">
+              <img src="https://cdn.depositphotos.com/40757599/stock-photo-indonesian-college-student.jpg" alt="mahasiswa indonesia">
+              <div>
+                <strong>Fajar — Tutor IPA (SMA)</strong>
+                <div style="font-size:13px;opacity:0.8">Mahasiswa Biologi, spesialis persiapan UN/UTBK</div>
+              </div>
+            </div>
+
+            <div class="tutor">
+              <img src="https://freepik.files.wordpress.com/2021/05/indonesian-student.jpg" alt="siswa indonesia 2">
+              <div>
+                <strong>Siti — Tutor Bahasa (SD)</strong>
+                <div style="font-size:13px;opacity:0.8">Mahasiswa Pendidikan Bahasa, metode pembelajaran ramah anak</div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section id="founders" class="section" style="margin-top:18px">
+          <h2>Owner & Founder</h2>
+          <p>FUN LEARNING didirikan oleh dua sahabat yang peduli pada kualitas pendidikan: Moh. Farkhan Fauzan dan Anjar Karisma Hartiyah. Mereka berdua berasal dari latar belakang akademik dan pengelolaan program belajar, dengan pengalaman mengelola kelas dan kegiatan edukasi mahasiswa.</p>
+
+          <div class="founders">
+            <div class="founder">
+              <img src="https://cdn.depositphotos.com/40757599/stock-photo-indonesian-college-student.jpg" alt="moh farkhan">
+              <div style="font-weight:700;margin-top:8px">Moh. Farkhan Fauzan</div>
+              <div style="font-size:13px;opacity:0.8">Co-Founder & CEO</div>
+            </div>
+            <div class="founder">
+              <img src="https://cdn.depositphotos.com/40757599/stock-photo-indonesian-college-student.jpg" alt="anjar">
+              <div style="font-weight:700;margin-top:8px">Anjar Karisma Hartiyah</div>
+              <div style="font-size:13px;opacity:0.8">Co-Founder & COO</div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <aside>
+        <div class="section">
+          <h3>Program Unggulan</h3>
+          <ul>
+            <li>Reguler: 2x per minggu</li>
+            <li>Intensif Ujian: 6 sesi / bulan</li>
+            <li>Private Coaching (1:1)</li>
+            <li>Tryout bulanan & raport perkembangan</li>
+          </ul>
+        </div>
+
+        <div class="section" style="margin-top:18px">
+          <h3>Testimoni Singkat</h3>
+          <p style="font-style:italic">"Nilai anakku naik signifikan setelah 3 bulan. Tentornya sabar dan mudah dimengerti." — Orang Tua</p>
+        </div>
+
+        <div class="section" style="margin-top:18px" id="contact">
+          <h3>Kontak & Daftar</h3>
+          <p>Untuk informasi pendaftaran dan trial class, hubungi kami:</p>
+          <p style="font-weight:700">Email: info@funlearning.id<br>Telp: +62 812-3456-7890</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>&copy; 2025 FUN LEARNING — Semua hak cipta dilindungi.</div>
+        <div>Alamat kantor pusat: Semarang, Indonesia</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
